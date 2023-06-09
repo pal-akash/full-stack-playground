@@ -18,4 +18,9 @@ public class StudentController {
         studentService.saveStudent(student);
         return "New student is added";
     }
+
+    @GetMapping("/getAll")
+    public List<Student> getAllStudent(){
+        return studentService.getAllStudent();
+    }
 }
